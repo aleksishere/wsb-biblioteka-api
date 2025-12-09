@@ -30,8 +30,12 @@ if (app.Environment.IsDevelopment())
 
 app.UseCors();
 
+app.UseDefaultFiles();
+app.UseStaticFiles();
+
 app.UseAuthorization();
 
 app.MapControllers();
+app.MapFallbackToFile("index.html");
 
 app.Run();
