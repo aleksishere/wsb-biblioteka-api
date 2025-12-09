@@ -1,16 +1,24 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
-namespace BibliotekaAPI.Models;
-
-public class Books
+namespace BibliotekaAPI.Models
 {
-    [Key]
-    public int Id { get; set; }
-    [Required]
-    public string Title { get; set; }
-    [MaxLength(50)]
-    public string Year { get; set; }
-    [MaxLength(100)]
-    public int AuthorId { get; set; }
-    public virtual Authors? Authors { get; set; }
+    public class Books
+    {
+        public long Id { get; set; }
+
+        [Required(AllowEmptyStrings = false)]
+        public string Title { get; set; } = string.Empty;
+
+        [Range(0, int.MaxValue)]
+        public int Year { get; set; }
+        
+        public long AuthorId { get; set; }
+        
+        public Author? Author { get; set; }
+        
+        [JsonIgnore]
+        public List<Copy> Copies { get; set; } = new();
+    }
 }
