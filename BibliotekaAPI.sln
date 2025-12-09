@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BibliotekaAPI", "BibliotekaAPI\BibliotekaAPI.csproj", "{BEAAF79A-0C08-446E-87E7-2BFF8BFF8BAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BEAAF79A-0C08-446E-87E7-2BFF8BFF8BAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEAAF79A-0C08-446E-87E7-2BFF8BFF8BAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEAAF79A-0C08-446E-87E7-2BFF8BFF8BAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEAAF79A-0C08-446E-87E7-2BFF8BFF8BAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
